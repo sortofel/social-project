@@ -3,7 +3,7 @@ package com.sortofel;
 import java.util.Scanner;
 
 public interface Reaction {
-    public default void reactSelector() {
+    default void reactSelector() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -14,14 +14,14 @@ public interface Reaction {
         System.out.println("0. 나가기");
         System.out.print("번호를 선택하세요 : ");
 
-        int num = sc.nextInt();
-        sc.nextLine();
-
         User user = new User();
 
         boolean run = true;
 
-        while (true) {
+        while (run) {
+
+            int num = sc.nextInt();
+            sc.nextLine();
 
             switch (num) {
                 case 1:
