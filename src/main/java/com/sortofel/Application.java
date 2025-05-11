@@ -3,13 +3,12 @@ package com.sortofel;
 import java.util.Scanner;
 
 public class Application {
-    public Application() {
-    }
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         User user = new User();
+        boolean run = true;
 
         while (true) {
             System.out.println("=====게시물 서비스=====");
@@ -18,13 +17,15 @@ public class Application {
             System.out.print("번호를 선택하세요 : ");
 
             int no = sc.nextInt();
+            sc.nextLine(); //엔터 지우기
 
             switch (no) {
                     case 1:
                         user.viewOldPost();
                         break;
                     case 0:
-                        break;
+                        run = false;
+                        return;
                     default:
                         System.out.println("선택 가능한 범위를 벗어났습니다.");
                         break;

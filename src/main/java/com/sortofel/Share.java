@@ -1,6 +1,8 @@
 package com.sortofel;
 
-public class Share extends Like {
+import static com.sortofel.Like.i;
+
+public class Share implements Reaction {
 
     @Override
     public void react() {

@@ -2,8 +2,7 @@ package com.sortofel;
 
 import java.util.Scanner;
 
-public class Like {
-
+public class Like implements Reaction {
     public void reactSelector() {
 
         Scanner sc = new Scanner(System.in);
@@ -36,6 +35,7 @@ public class Like {
 
     static int i = 0;
 
+    @Override
     public void react() {
 
         if (i == 0) {

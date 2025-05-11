@@ -1,6 +1,8 @@
 package com.sortofel;
 
-public class Repost extends Like {
+import static com.sortofel.Like.i;
+
+public class Repost implements Reaction {
 
     @Override
     public void react() {
