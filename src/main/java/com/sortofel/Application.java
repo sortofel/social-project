@@ -8,7 +8,6 @@ public class Application {
 
         Scanner sc = new Scanner(System.in);
         User user = new User();
-        boolean run = true;
 
         while (true) {
             System.out.println("=====게시물 서비스=====");
@@ -24,7 +23,6 @@ public class Application {
                         user.viewOldPost();
                         break;
                     case 0:
-                        run = false;
                         return;
                     default:
                         System.out.println("선택 가능한 범위를 벗어났습니다.");

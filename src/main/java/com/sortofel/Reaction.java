@@ -16,9 +16,7 @@ public interface Reaction {
 
         User user = new User();
 
-        boolean run = true;
-
-        while (run) {
+        while (true) {
 
             int num = sc.nextInt();
             sc.nextLine();
@@ -31,7 +29,6 @@ public interface Reaction {
                 case 3:
                     user.pushShare(); break;
                 case 0:
-                    run = false;
                     return;
                 default:
                     System.out.println("1~3 번 중 선택하세요");

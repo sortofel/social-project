@@ -1,14 +1,14 @@
 package com.sortofel;
 
-import static com.sortofel.Like.i;
-
 public class Repost implements Reaction {
+
+    static boolean reposted = false;
 
     @Override
     public void react() {
-        if (i == 0) {
+        if (!reposted) {
             System.out.println("친구의 게시물을 재게시했습니다.");
-            i++;
+            reposted = true;
         } else {
             System.out.println("재게시는 한번만 할 수 있습니다.");
         }
