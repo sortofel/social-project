@@ -8,6 +8,8 @@ public class Post {
 
     private String post;
 
+    private int creatOrView;
+
     public Post() {}
 
     public Post(String friend, int time, String post) {
@@ -40,5 +42,12 @@ public class Post {
         this.time = time;
     }
 
+    public int creatOrView() {
+        return this.creatOrView;
+    }
+
+    public void setCreatOrView(int creatOrView) {
+        this.creatOrView = creatOrView;
+    }
     //post 초기값 설정자, getter, setter
 }

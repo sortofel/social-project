@@ -1,8 +1,8 @@
-package com.sortofel;
+package com.sortofel.Interface;
 
 public class Repost implements Reaction {
 
-    static boolean reposted = false;
+    static boolean reposted;
 
     @Override
     public void react() {

@@ -1,8 +1,8 @@
-package com.sortofel;
+package com.sortofel.Interface;
 
 public class Like implements Reaction {
 
-    static boolean liked = false;
+    static boolean liked;
 
     @Override
     public void react() {

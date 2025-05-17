@@ -1,8 +1,8 @@
-package com.sortofel;
+package com.sortofel.Interface;
 
 public class Share implements Reaction {
 
-    static boolean shared = false;
+    static boolean shared;
 
     @Override
     public void react() {

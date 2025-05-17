@@ -1,4 +1,6 @@
-package com.sortofel;
+package com.sortofel.Interface;
+
+import com.sortofel.User;
 
 import java.util.Scanner;
 
